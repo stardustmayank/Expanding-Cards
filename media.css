@@ -1,0 +1,38 @@
+@media screen and (max-width: 800px) and (min-width: 450px) {
+  .panel {
+    min-height: 20vh;
+    min-width: 30vw;
+    border-radius: 50px;
+  }
+  .panel.active {
+    min-width: 70vw;
+  }
+  .panel h3 {
+    font-size: 2rem;
+  }
+  .container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .panel {
+    min-height: 10vh;
+    min-width: 35vw;
+    border-radius: 100px;
+    justify-content: flex-start;
+  }
+  .panel h3{
+    font-size: 1.5rem;
+  }
+  .panel.active {
+    border-radius: 50px;
+    min-width: 70vw;
+    min-height: 20vh;
+  }
+}
